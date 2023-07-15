@@ -1,0 +1,122 @@
+package com.example.beeapispring;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
+
+
+public class Beefacts {
+    private ArrayList<String> beeFactsArry = new ArrayList<>(Arrays.asList(
+            "Bees have been found to have individual personalities, with some being more adventurous or aggressive than others",
+            "Certain species of bees, like the Osmia avosetta, create intricate nests using flower petals and mud",
+            "Bees are capable of recognising human faces and remembering them for long periods of time",
+            "The sting of a sweat bee is so mild that most people won't even notice they've been stung",
+            "Certain species of bees, such as the Anthophora plumipes, are capable of buzzing at frequencies that can shake flowers to release pollen",
+            "Bees have a highly developed sense of time and can adjust their activities based on the position of the sun and other environmental cues",
+            "Certain species of bees, like the blue-banded bees, can perform a rapid wing movement called 'sonication' to release pollen from certain flowers",
+            "Bees have been trained to detect diseases such as tuberculosis and cancer in human breath",
+            "Certain species of bees, like the Japanese honey bee, can defend their hives from predatory hornets by forming a 'hot defensive bee ball' that raises the temperature and suffocates the intruder",
+            "Bees exhibit complex learning and problem-solving abilities, as observed in experiments where they navigate mazes and solve puzzles",
+            "Certain species of bees, like the Halictus rubicundus, have a preference for nesting in abandoned snail shells",
+            "Bees have a specialised joint in their hind legs called a 'pollen press' that helps compact pollen into pellets for transport",
+            "Certain species of bees, such as the carpenter bees, create tunnels in wood for nesting, sometimes causing damage to wooden structures",
+            "Bees have been found to engage in 'cleansing flights' where they leave the hive to defecate and keep the hive clean",
+            "Certain species of bees, like the Euglossa bazinga, are named after popular culture references such as TV shows or movies",
+            "Bees can detect and communicate changes in the Earth's magnetic field, helping them navigate and find their way back to the hive",
+            "Certain species of bees, like the Megachile pluto, are considered 'giant bees' due to their large size",
+            "Bees have been used in agriculture for 'biomonitoring,' where their presence and health are used as indicators of environmental quality",
+            "Certain species of bees, like the leafcutter bees, use plant materials to construct protective nests for their offspring",
+            "Bees have been observed displaying a behaviour called 'bearding,' where large numbers of bees gather on the outside of the hive, often during hot weather",
+            "Certain species of bees, like the mining bees, create distinct entrance mounds or chimneys above their underground nests",
+            "Bees have been used in the field of robotics to inspire the development of tiny flying robots known as 'bee drones'",
+            "Certain species of bees, like the Xylocopa bombylans, exhibit territorial behaviour and aggressively defend their preferred feeding or nesting areas",
+            "Bees have a highly efficient circulatory system that delivers oxygen to their flight muscles, allowing for sustained flight",
+            "Certain species of bees, such as the mason bees, use mud or clay to construct individual compartments within their nests",
+            "Bees have been observed stealing nectar from flowers without pollinating them, a behaviour known as 'nectar robbing'",
+            "Certain species of bees, like the Nomia melanderi, are considered 'cuckoo bees' as they lay their eggs in the nests of other bees, tricking them into raising their young",
+            "Bees have been used in therapy known as 'apitherapy', where bee products such as venom and honey are used for medicinal purposes",
+            "Certain species of bees, like the honey pot ants, have specialised workers that store excess nectar or honey inside their bodies to be shared with the colony",
+            "Bees can fly at high altitudes, with records of honey bees found above Mount Everest",
+            "Certain species of bees, like the carpenter bees, can exhibit a behaviour called 'nectar stealing' where they access nectar by bypassing the flower's reproductive structures",
+            "Bees have been found to possess antimicrobial properties in their saliva, helping protect them from pathogens and diseases",
+            "Certain species of bees, like the Andrena vaga, are known for their unusually long tongues that allow them to reach nectar in deep flowers",
+            "Bees have been observed using various materials, such as resin or plant fibres, to construct their nests, depending on the species and availability of resources",
+            "Bees have a preference for certain colours of flowers, with blue and purple being particularly attractive to them",
+            "Certain species of bees, like the Halictus scabiosae, are known for their strong affinity for specific plant families",
+            "Bees have been observed engaging in 'tremble dances' where they vibrate their wing muscles while resting on flowers to dislodge stubborn pollen",
+            "Certain species of bees, like the Xylocopa tenuiscapa, are known for their ability to chew through hard materials such as wood or bamboo",
+            "Bees have a highly efficient digestive system that allows them to process nectar and convert it into honey",
+            "Certain species of bees, like the sweat bees, have specialised scopal hairs on their hind legs to carry and transport pollen",
+            "Bees have been found to exhibit different sleep patterns depending on their role in the colony, with worker bees having shorter periods of rest compared to drones or queen bees",
+            "Certain species of bees, like the Bombus impatiens, have been successfully trained to perform simple tasks and navigate through mazes",
+            "Bees play a vital role in maintaining biodiversity and ecological balance by pollinating a wide variety of plant species",
+            "Honey bees communicate through a dance language known as 'waggle dance' to indicate the direction and distance of nectar sources",
+            "Female worker bees have specialized glands on their legs that produce 'bee bread,' a mixture of pollen and nectar used as food for the colony",
+            "Honey bees can recognize human faces and are known to associate certain individuals with rewards or punishments",
+            "A honey bee colony consists of one queen, a few hundred drones, and thousands of worker bees",
+            "Honey bees have five eyes, including three small eyes on the top of their head called 'ocelli'",
+            "The queen bee can lay up to 2,000 eggs per day, contributing to the growth and survival of the colony",
+            "Honey bees are able to regulate the temperature inside the hive by flapping their wings to generate airflow",
+            "The average worker bee produces only about 1/12th of a teaspoon of honey in her lifetime",
+            "Honey bees are known for their ability to navigate using the sun as a reference point, even on cloudy days",
+            "The lifespan of a worker bee varies depending on the time of year, ranging from a few weeks to several months",
+            "Honey bees have a highly efficient digestive system that allows them to process nectar and transform it into honey",
+            "The wings of honey bees beat approximately 200 times per second, enabling them to fly up to 15 miles per hour",
+            "Honey bees have a complex social structure with different roles and tasks assigned to each individual",
+            "The drones (male bees) have only one purpose: to mate with the queen and contribute to the reproduction of the colony",
+            "Honey bees have a remarkable memory and can remember specific flower locations even after several days",
+            "Honey bees have been used for centuries to produce beeswax, which has numerous applications including candle making and cosmetics",
+            "Honey bees have been kept and managed by humans for thousands of years, dating back to ancient civilizations",
+            "Honey bees have a mutualistic relationship with flowers, as they collect nectar for food and, in turn, help pollinate the plants",
+            "The wings of honey bees are transparent and can reflect beautiful colours when exposed to light",
+            "Honey bees have a specialized stomach called a 'honey stomach' to store and transport nectar back to the hive",
+            "Honey bees can communicate with each other by emitting pheromones, chemical substances that convey specific messages",
+            "Honey bees are excellent navigators and can find their way back to the hive even after flying long distances",
+            "The queen bee emits a substance called 'queen pheromone' that helps regulate the behavior and development of other bees in the colony",
+            "Honey bees have a natural defense mechanism where they use their stinger to protect the colony from threats",
+            "The honey bee's brain is about the size of a sesame seed but is densely packed with neurons",
+            "Honey bees are capable of recognizing and remembering different scents, allowing them to identify specific flowers",
+            "Honey bees play a crucial role in the pollination of many fruits, vegetables, and crops that contribute to our food supply",
+            "Honey bees have been observed to exhibit 'swarming' behavior, where a portion of the colony leaves with the old queen to form a new hive",
+            "Honey bees produce beeswax by secreting it from special glands on their abdomen and shaping it into honeycomb cells",
+            "Honey bees have a unique system of orientation and can communicate the direction of a food source through their waggle dance",
+            "Honey bees are sensitive to ultraviolet light and can see colors outside of the human visual spectrum",
+            "The venom in a honey bee's sting contains various compounds that can cause pain, inflammation, and allergic reactions in some individuals",
+            "Honey bees have been used as indicators of environmental health due to their sensitivity to changes in pesticide exposure and habitat loss",
+            "Honey bees are capable of adjusting their foraging behavior based on the availability of nectar and pollen in their surroundings",
+            "Honey bees have a fascinating method of collective decision-making called 'swarm intelligence' that helps them find the best nesting sites",
+            "The wax in honeycomb cells has antibacterial properties, helping keep the hive clean and reducing the spread of diseases",
+            "Honey bees have been domesticated and selectively bred for specific traits, leading to different breeds and subspecies",
+            "Honey bees are able to regulate the size of the brood (developing bee larvae) based on the availability of resources and colony needs",
+            "The body temperature of honey bees is maintained through a process called 'endothermy' where they generate heat by contracting their flight muscles",
+            "Honey bees have been studied extensively for their complex language and communication system, which includes a variety of signals and dances",
+            "The collection of pollen by honey bees contributes to the transport of genetic material between plants, promoting genetic diversity",
+            "Honey bees have a specialized structure on their hind legs called a 'pollen basket' or 'corbicula' to store and transport pollen",
+            "Honey bees have been used in scientific research to study various topics, including navigation, learning, and social behavior",
+            "The lifespan of a queen bee can vary significantly, with some living for a few years while others live for several months",
+            "Honey bees are incredibly efficient at converting nectar into honey, requiring approximately 8 pounds of nectar to produce 1 pound of honey",
+            "Honey bees have been revered and symbolized in different cultures throughout history for their industriousness and role in nature",
+            "Honey bees are sensitive to changes in the environment, making them important indicators of climate change and habitat degradation",
+            "Honey bees have been documented performing 'cleansing flights' during winter months to eliminate waste and maintain hive cleanliness",
+            "Honey bees have been found to have a preference for certain types of music, with classical music appearing to have a calming effect on them",
+            "Honey bees have the ability to recognize and differentiate between human faces, even though they have compound eyes",
+            "Honey bees have been observed using tools in the wild, such as using small rocks or sticks to prop open flowers to access nectar",
+            "Honey bees are capable of flying in the rain, although they prefer to stay inside the hive during inclement weather",
+            "The average honey bee colony can produce and store up to 200 pounds of honey in a year",
+            "Honey bees have a unique and complex system of ventilation within their hive to regulate temperature and humidity",
+            "Honey bees have been trained to detect specific odors, such as the scent of explosives or certain diseases",
+            "Honey bees have a specialized joint in their hind legs called the 'pollen press' that helps compact pollen for transport",
+            "Honey bees have been observed engaging in 'tremble dances' to communicate information about the quality of a food source to other bees"
+    ));
+
+
+    public String GetBeeFact(){
+        Random random = new Random();
+        int randomIndex = random.nextInt(beeFactsArry.size());
+        String returnValue = beeFactsArry.get(randomIndex);
+        beeFactsArry.remove(randomIndex);
+        return returnValue;
+    }
+
+}
